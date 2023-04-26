@@ -26,11 +26,10 @@ export default {
 @use "../styles/partials/_variables.scss" as *;
 
 #background {
-  height: 540px;
   background-color: $mercury;
 }
 .container {
-  height: 100%;
+  padding: 8rem;
   width: 50%;
   flex-direction: column;
   text-align: center;
