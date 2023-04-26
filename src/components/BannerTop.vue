@@ -24,7 +24,7 @@ export default {
 @use "../styles/partials/_variables.scss" as *;
 
 .jumbo{
-    height: 500px;
+    height: 540px;
     background-image: url(../imgs/avada-movers-homeherobackground-final.jpg);
     background-size: cover,
 }

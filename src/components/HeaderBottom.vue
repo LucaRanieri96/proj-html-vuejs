@@ -43,10 +43,6 @@ nav {
     width: 80%;
   }
 }
-button {
-  border-radius: 2rem;
-  font-size: 13px;
-}
 ul {
   margin: 0;
   padding: 0;
