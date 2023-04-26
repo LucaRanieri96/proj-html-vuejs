@@ -37,13 +37,6 @@ export default {
   #title{
     font-weight: 600;
   }
-  h2 {
-    color: $lima;
-    font-size: 48px;
-    font-weight: 700;
-    width: 50%;
-    margin-bottom: 1rem;
-  }
   p {
     font-size: 16px;
     color: $darkgrey;

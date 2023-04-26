@@ -1,9 +1,11 @@
 <script>
 import MainTestimonials from './MainTestimonials.vue';
+import MainService from './MainService.vue';
 
 export default {
   components: {
-    MainTestimonials
+    MainTestimonials,
+    MainService,
   },
   name: "SiteMain",
 };
@@ -11,6 +13,7 @@ export default {
 
 <template>
  <MainTestimonials></MainTestimonials>
+ <MainService></MainService>
 </template>
 
 <style lang="scss" scoped>
