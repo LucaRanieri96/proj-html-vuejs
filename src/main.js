@@ -2,4 +2,13 @@ import { createApp } from 'vue'
 import './styles/style.scss'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+import { faPhoneFlip } from '@fortawesome/free-solid-svg-icons'
+import { faTwitter, faYoutube, faTelegram, faInstagram} from '@fortawesome/free-brands-svg-icons'
+
+library.add( faPhoneFlip, faTwitter, faTelegram, faInstagram, faYoutube )
+
+
+createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
