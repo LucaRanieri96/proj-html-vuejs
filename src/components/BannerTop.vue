@@ -25,7 +25,7 @@ export default {
 
 .jumbo{
     height: 540px;
-    background-image: url(../assets/imgs/avada-movers-homeherobackground-final.jpg);
+    background-image: url(../../public/imgs/avada-movers-homeherobackground-final.jpg);
     background-size: cover,
 }
 

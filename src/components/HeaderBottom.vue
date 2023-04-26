@@ -14,7 +14,7 @@ export default {
   <nav>
     <div class="container d-flex justify-content-between">
       <div id="logo">
-        <img class="py-2" src="../assets/imgs/avada-movers-logo.png" alt="" />
+        <img class="py-2" src="../../public/imgs/avada-movers-logo.png" alt="" />
       </div>
       <div class="navLinks d-flex align-items-center">
         <ul class="d-flex gap-5 align-items-center">

@@ -34,7 +34,7 @@ export default {
     <div
       class="container d-flex align-items-center justify-content-center flex-column">
       <p id="title">WE ARE A PROFESSIONAL</p>
-      <h2>Full-Service Solution</h2>
+      <h2 class="mb-5">Full-Service Solution</h2>
       <div class="row">
         <div v-for="card in cards" class="col">
           <div class="card text-center">
@@ -64,9 +64,9 @@ export default {
   border: 0;
   border-radius: 0;
   background-color: $mercury;
-  padding: 2rem;
+  padding: 1.5rem;
   img{
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   .card-body{
     padding: 2rem;
