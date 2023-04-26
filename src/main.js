@@ -1,14 +1,26 @@
-import { createApp } from 'vue'
-import './styles/style.scss'
-import App from './App.vue'
+import { createApp } from "vue";
+import "./styles/style.scss";
+import App from "./App.vue";
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-import { faPhoneFlip } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter, faYoutube, faTelegram, faInstagram} from '@fortawesome/free-brands-svg-icons'
+import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
+import { faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
+import {
+  faTwitter,
+  faYoutube,
+  faTelegram,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
-library.add( faPhoneFlip, faTwitter, faTelegram, faInstagram, faYoutube )
+library.add(
+  faPhoneFlip,
+  faTwitter,
+  faTelegram,
+  faInstagram,
+  faYoutube,
+  faPaperPlane
+);
 
-
-createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
+createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");

@@ -1,57 +1,62 @@
 <script>
-
 export default {
   name: "HeaderBottom",
-  data(){
-    return{
+  data() {
+    return {
       logo: ``,
-      navLinks: [
-        "Home",
-        "Rates",
-        "Testimonials",
-        "FAQ",
-        "Blogs",
-        "Contact",
-      ]
-    }
-  }
+      navLinks: ["Home", "Rates", "Testimonials", "FAQ", "Blogs", "Contact"],
+    };
+  },
 };
 </script>
 
 <template>
-    <nav>
-      <div class="container d-flex justify-content-between">
-        <div id="logo">
-          <img src="../imgs/avada-movers-logo.png" alt="">
-        </div>
-        <div class="navLinks d-flex align-items-center">
-          <ul class="d-flex gap-5 align-items-center">
-            <li v-for="link in navLinks">{{link}}</li>
-          </ul>
-          <button type="button" class="btn btn-primary ms-5"><strong>FREE QUOTE</strong></button>
-        </div>
+  <nav>
+    <div class="container d-flex justify-content-between">
+      <div id="logo">
+        <img class="py-2" src="../imgs/avada-movers-logo.png" alt="" />
       </div>
-    </nav>
+      <div class="navLinks d-flex align-items-center">
+        <ul class="d-flex gap-5 align-items-center">
+          <li v-for="link in navLinks">{{ link }}</li>
+        </ul>
+        <button type="button" class="btn btn-primary ms-5">
+          <strong>FREE QUOTE</strong>
+        </button>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <style scoped lang="scss">
 @use "../styles/partials/_variables.scss" as *;
 
- nav{
+nav {
   background: linear-gradient(to bottom, $light 0%, transparent 100%);
-  position: sticky;
- }
- button {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.container{
+  position: relative;
+  img{
+    width: 80%;
+  }
+}
+button {
   border-radius: 2rem;
- }
-ul{
+  font-size: 13px;
+}
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
   font-weight: 700;
-  li:hover{
+  
+  li:hover {
     color: $lima;
     cursor: pointer;
+    transition-duration: 0.2s;
   }
 }
 </style>
