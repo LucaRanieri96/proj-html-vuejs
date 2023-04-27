@@ -14,7 +14,6 @@ export default {
             <div class="card-body">
               <span>WE REMOVE THE HEADACHE FROM MOVING</span>
               <h3 class="card-title">Move With Ease</h3>
-              <hr>
               <p class="card-text">
                 With our super simple service we can take you from getting a quote, right through to being in your new home with all of your belongings securely packed and safely delivered, even in the rooms of your choice.
               </p>
@@ -51,14 +50,13 @@ export default {
     }
     h3{
       margin: 1rem 0;
+      padding-bottom: 1.5rem;
       font-size: 50px;
       font-weight: 700;
-    }
-    hr{
-      margin-bottom: 3rem;
+      border-bottom: 1px solid $mantis;
     }
     p{
-      font-size: 18px;
+      font-size: 17px;
       line-height: 36px;
     }
     button{
