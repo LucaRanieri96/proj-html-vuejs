@@ -29,7 +29,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use "../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/variables" as *;
 
 nav {
   background: linear-gradient(to bottom, $light 0%, transparent 100%);

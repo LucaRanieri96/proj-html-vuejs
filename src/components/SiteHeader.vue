@@ -1,6 +1,6 @@
 <script>
-import HeaderTop from './HeaderTop.vue';
-import HeaderBottom from './HeaderBottom.vue';
+import HeaderTop from './HeaderComponents/HeaderTop.vue';
+import HeaderBottom from './HeaderComponents/HeaderBottom.vue';
 import Banner from './Banner.vue';
 
 export default {

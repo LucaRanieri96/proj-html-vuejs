@@ -1,49 +1,49 @@
 <script>
 export default {
-  name: "MainHeadache",
+  name: "MainRequest",
 };
 </script>
 
 <template>
   <div id="background">
     <div class="container d-flex justify-content-center align-items-center">
-      <p id="title">HEADACHE FREE</p>
-      <h2>Award Winning Moving Company</h2>
-      <p class="my-2">
+      <h2>Request A Free Quote</h2>
+      <p class="mb-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
-        augue. Orci varius natoque penatibus et magnis dis parturient montes,
-        ridiculus mus. Aliquam enim leo, condimentum facilisis nulla sed, cursus
-        arcu. Aliquam enim leo.
+        consectetur augue. Orci varius natoque penatibus et magnis dis
+        parturient montes, nascetur ridiculus mus.
       </p>
       <button type="button" class="btn btn-primary mt-3">
-        <strong>READ OUR TESTIMONIALS</strong>
+        <strong>CLICK HERE</strong>
       </button>
     </div>
   </div>
+  <div id="green"></div>
 </template>
 
 <style lang="scss" scoped>
-@use "../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/variables" as *;
 
 #background {
-  background-color: $mercury;
-  padding: 4rem 0;}
+  background-image: url(../../public/imgs/avada-movers-request-quote-background.jpg);
+  background-size: cover;
+  padding: 10rem 0;
+}
+#green{
+    height: 1rem;
+    background-color: $lima;
+}
 .container {
-  padding: 8rem;
   width: 50%;
   flex-direction: column;
   text-align: center;
-  #title{
-    font-weight: 600;
-    color: black;
-  }
   h2{
-    width: 500px;
+    font-size: 50px;
   }
   p {
     font-size: 16px;
     width: 700px;
-    color: $darkgrey;
+    color: black;
     line-height: 30px;
     font-weight: 200;
   }

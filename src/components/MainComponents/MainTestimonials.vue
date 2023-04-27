@@ -50,7 +50,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/variables" as *;
 
 #title {
   font-weight: 600;

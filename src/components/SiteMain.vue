@@ -1,9 +1,9 @@
 <script>
-import MainHeadache from './MainHeadache.vue';
-import MainService from './MainService.vue';
-import MainQuote from './MainQuote.vue';
-import MainTestimonials from './MainTestimonials.vue';
-import MainRequest from './MainRequest.vue';
+import MainHeadache from './MainComponents/MainHeadache.vue';
+import MainService from './MainComponents/MainService.vue';
+import MainQuote from './MainComponents/MainQuote.vue';
+import MainTestimonials from './MainComponents/MainTestimonials.vue';
+import MainRequest from './MainComponents/MainRequest.vue';
 
 export default {
   components: {

@@ -21,7 +21,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use "../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/variables" as *;
 
 .jumbo{
     height: 800px;

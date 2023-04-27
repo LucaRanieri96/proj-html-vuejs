@@ -1,6 +1,6 @@
 <script>
-import FooterTop from './FooterTop.vue';
-import FooterBottom from './FooterBottom.vue';
+import FooterTop from './FooterComponents/FooterTop.vue';
+import FooterBottom from './FooterComponents/FooterBottom.vue';
 
 export default {
   name: "SiteFooter",

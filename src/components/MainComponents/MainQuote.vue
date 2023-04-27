@@ -27,7 +27,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/variables" as *;
 #wallpaper {
   background-image: url(../../public/imgs/avada-movers-movewithease-background-new.jpg);
   background-size: cover;

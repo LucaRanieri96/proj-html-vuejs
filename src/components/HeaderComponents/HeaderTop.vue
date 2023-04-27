@@ -33,7 +33,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use "../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/variables" as *;
 
 #greenHeader {
   height: 50px;

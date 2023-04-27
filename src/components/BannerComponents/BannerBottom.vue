@@ -17,7 +17,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use "../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/variables" as *;
 .blueDiv {
   height: 140px;
   background-color: $denim;

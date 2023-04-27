@@ -1,6 +1,6 @@
 <script>
-import BannerTop from './BannerTop.vue';
-import BannerBottom from './BannerBottom.vue';
+import BannerTop from './BannerComponents/BannerTop.vue';
+import BannerBottom from './BannerComponents/BannerBottom.vue';
 
 export default {
   components: {
