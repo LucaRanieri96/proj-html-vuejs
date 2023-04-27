@@ -6,7 +6,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
-import { faPhoneFlip, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faPhoneFlip, faChevronUp, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
   faYoutube,
@@ -22,6 +22,7 @@ library.add(
   faYoutube,
   faPaperPlane,
   faChevronUp,
+  faShoppingCart,
 );
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");

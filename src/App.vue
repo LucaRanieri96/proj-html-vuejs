@@ -3,6 +3,7 @@ import SiteHeader from "./components/SiteHeader.vue";
 import SiteMain from "./components/SiteMain.vue";
 import SiteFooter from "./components/SiteFooter.vue";
 import ScrollButton from "./components/ScrollButton.vue";
+import ShoppingCart from "./components/ShoppingCart.vue";
 
 export default {
   components: {
@@ -10,6 +11,7 @@ export default {
     SiteMain,
     SiteFooter,
     ScrollButton,
+    ShoppingCart,
   },
   data() {
     return{}
@@ -23,6 +25,7 @@ export default {
  <SiteMain></SiteMain>
  <SiteFooter></SiteFooter>
  <ScrollButton></ScrollButton>
+ <ShoppingCart></ShoppingCart>
 </template>
 
 <style lang="scss">
