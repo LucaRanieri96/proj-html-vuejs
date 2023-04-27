@@ -1,6 +1,15 @@
 <script>
 export default {
   name: "FooterTop",
+  props: {
+    leftName: String,
+    leftDescription: String,
+    logo: String,
+    midName: String,
+    midLinks: Array,
+    rightName: String,
+    rightLinks: Array,
+  },
 };
 </script>
 
@@ -9,32 +18,22 @@ export default {
     <div class="container">
       <div class="row">
         <div class="col-4">
-          <h5>ABOUT</h5>
+          <h5>{{ leftName }}</h5>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            convallis ex ut sem accumsan vehicula. Integer elit arcu, hendrerit
-            id sapien ut, facilisis accumsan arcu.
+            {{ leftDescription }}
           </p>
-          <img src="../../../public/imgs/avada-movers-logo.png" alt="" />
+          <img :src="logo" alt="" />
         </div>
         <div class="col-4">
-          <h5>AVADA MOVERS</h5>
+          <h5>{{ midName }}</h5>
           <ul>
-            <li>Home</li>
-            <li>Rates</li>
-            <li>Testimonials</li>
-            <li>Blog</li>
-            <li>Free Quote</li>
+            <li v-for="link in midLinks">{{ link }}</li>
           </ul>
         </div>
         <div class="col-4">
-          <h5>RECENT POSTS</h5>
+          <h5>{{ rightName }}</h5>
           <ul>
-            <li>> Heading Out To College?</li>
-            <li>> Moving Your Business?</li>
-            <li>> Outstanding Quality</li>
-            <li>> Cost of Moving</li>
-            <li>> Best Moving Tips</li>
+            <li v-for="link in rightLinks">{{ link }}</li>
           </ul>
         </div>
       </div>
@@ -47,26 +46,26 @@ export default {
 #wallpaper {
   background-color: $light;
 }
-.container{
+.container {
   padding: 5rem 0;
 }
-h5{
+h5 {
   font-weight: 600;
   margin-bottom: 2rem;
 }
-p{
+p {
   line-height: 36px;
   font-weight: 200;
   margin-bottom: 3rem;
 }
-ul{
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   line-height: 45px;
   font-weight: 200;
-  
-  li:hover{
+
+  li:hover {
     cursor: pointer;
     color: $lima;
     transition: all 0.2s;

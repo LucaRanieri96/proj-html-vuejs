@@ -2,17 +2,9 @@
 
 export default {
   name: "FooterBottom",
-  data() {
-    return {
-      madeBy:
-        "© Copyright 2023 | Luca Ranieri by Boolean | No Rights Reserved | Powered by Vite + VueJS",
-      icons: [
-        ["fab", "telegram"],
-        ["fab", "twitter"],
-        ["fab", "instagram"],
-        ["fab", "youtube"],
-      ],
-    };
+  props: {
+    madeBy: String,
+    icons: Array,
   },
 };
 </script>
