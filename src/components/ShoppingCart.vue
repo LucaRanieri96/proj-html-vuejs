@@ -15,10 +15,10 @@ export default {
 </script>
 
 <template>
-  <a id="button" @mouseover="toggleShake" @mouseleave="toggleShake">
-    <font-awesome-icon :icon="['fas', 'cart-shopping']" v-show="!shake"/>
-    <font-awesome-icon :icon="['fas', 'cart-shopping']" shake v-show="shake"/>
-  </a>
+  <div id="button" @mouseenter="toggleShake" @mouseleave="toggleShake">
+    <font-awesome-icon :icon="['fas', 'cart-shopping']" v-show="shake === false"/>
+    <font-awesome-icon :icon="['fas', 'cart-shopping']" shake v-show="shake === true"/>
+  </div>
 </template>
 
 <style scoped lang="scss">
