@@ -2,12 +2,14 @@
 import SiteHeader from "./components/SiteHeader.vue";
 import SiteMain from "./components/SiteMain.vue";
 import SiteFooter from "./components/SiteFooter.vue";
+import ScrollButton from "./components/ScrollButton.vue";
 
 export default {
   components: {
     SiteHeader,
     SiteMain,
     SiteFooter,
+    ScrollButton,
   },
   data() {
     return{}
@@ -20,6 +22,7 @@ export default {
  <SiteHeader></SiteHeader>
  <SiteMain></SiteMain>
  <SiteFooter></SiteFooter>
+ <ScrollButton></ScrollButton>
 </template>
 
 <style lang="scss">
