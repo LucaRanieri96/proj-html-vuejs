@@ -55,7 +55,9 @@ export default {
 
 <style lang="scss" scoped>
 @use "../styles/partials/_variables.scss" as *;
-
+#title{
+  font-weight: 600;
+}
 #background {
   background-color: $light;
 }
@@ -83,7 +85,7 @@ export default {
   }
   p{
     font-weight: 200;
-    line-height: 30px;
+    line-height: 32px;
   }
   button{
     font-weight: 600;

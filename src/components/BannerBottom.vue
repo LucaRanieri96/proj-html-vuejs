@@ -19,7 +19,7 @@ export default {
 <style scoped lang="scss">
 @use "../styles/partials/_variables.scss" as *;
 .blueDiv {
-  height: 120px;
+  height: 140px;
   background-color: $denim;
   color: $light;
   transition-duration: 0.2s;

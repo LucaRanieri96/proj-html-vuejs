@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-  <nav>
+  <nav class="my-2">
     <div class="container d-flex justify-content-between">
       <div id="logo">
         <img class="py-2" src="../../public/imgs/avada-movers-logo.png" alt="" />
@@ -39,9 +39,6 @@ nav {
 }
 .container{
   position: relative;
-  img{
-    width: 80%;
-  }
 }
 ul {
   margin: 0;

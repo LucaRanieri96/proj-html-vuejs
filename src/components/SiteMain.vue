@@ -1,19 +1,22 @@
 <script>
-import MainTestimonials from './MainTestimonials.vue';
+import MainHeadache from './MainHeadache.vue';
 import MainService from './MainService.vue';
+import MainQuote from './MainQuote.vue';
 
 export default {
   components: {
-    MainTestimonials,
+    MainHeadache,
     MainService,
+    MainQuote,
   },
   name: "SiteMain",
 };
 </script>
 
 <template>
- <MainTestimonials></MainTestimonials>
+ <MainHeadache></MainHeadache>
  <MainService></MainService>
+ <MainQuote></MainQuote>
 </template>
 
 <style lang="scss" scoped>

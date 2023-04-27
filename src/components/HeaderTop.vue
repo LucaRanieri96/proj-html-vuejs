@@ -23,10 +23,10 @@ export default {
     <div class="container d-flex justify-content-between">
       <div class="left d-flex align-items-center">
         <font-awesome-icon :icon="icons[0]" />
-        <div class="ms-2">{{ callUs }}</div>
+        <p class="ms-2">{{ callUs }}</p>
       </div>
-      <div class="right d-flex gap-2 align-items-center">
-        <font-awesome-icon v-for="icon in icons.splice(1)" :icon="icon" />
+      <div class="right d-flex gap-3 align-items-center">
+        <font-awesome-icon v-for="icon in icons.splice(1)" :icon="icon" class="icons"/>
       </div>
     </div>
   </div>
@@ -38,10 +38,17 @@ export default {
 #greenHeader {
   height: 50px;
   background-color: $lima;
+  p{
+    margin: 0;
+    font-size: 13px;
+  }
 }
 
 .left,
 .right {
   color: white;
+  .icons:hover{
+    cursor: pointer;
+  }
 }
 </style>

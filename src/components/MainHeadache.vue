@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: "MainTestimonials",
+  name: "MainHeadache",
 };
 </script>
 
@@ -27,7 +27,7 @@ export default {
 
 #background {
   background-color: $mercury;
-}
+  padding: 4rem 0;}
 .container {
   padding: 8rem;
   width: 50%;
@@ -35,12 +35,17 @@ export default {
   text-align: center;
   #title{
     font-weight: 600;
+    color: black;
+  }
+  h2{
+    width: 500px;
   }
   p {
     font-size: 16px;
+    width: 700px;
     color: $darkgrey;
-    padding: 0 3vw;
     line-height: 30px;
+    font-weight: 200;
   }
 }
 </style>
