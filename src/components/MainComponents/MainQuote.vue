@@ -31,6 +31,7 @@ export default {
 #wallpaper {
   background-image: url(../../public/imgs/avada-movers-movewithease-background-new.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 .container{
   padding: 10rem 0;
