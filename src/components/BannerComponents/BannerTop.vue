@@ -2,15 +2,14 @@
 export default {
   name: "BannerTop",
   data() {
-    return {
-    };
+    return {};
   },
 };
 </script>
 
 <template>
   <div class="jumbo">
-    <transition>
+    <transition appear>
       <div class="container d-flex justify-content-center align-items-center flex-column">
         <p>MOVING WITHOUT THE HASSLE</p>
         <h1>WE MAKE IT SIMPLE</h1>
@@ -22,6 +21,15 @@ export default {
 
 <style scoped lang="scss">
 @use "../../styles/partials/variables" as *;
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 3s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
 
 .jumbo {
   height: 800px;
@@ -46,5 +54,4 @@ export default {
     color: black;
   }
 }
-
 </style>

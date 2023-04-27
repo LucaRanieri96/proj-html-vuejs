@@ -6,22 +6,32 @@ export default {
     links: Array,
   },
   mounted() {
-  console.log(this.logo);
-  console.log(this.links);
-},
+    console.log(this.logo);
+    console.log(this.links);
+  },
 };
 </script>
 
 <template>
   <nav class="my-2">
     <div class="container d-flex justify-content-between">
-      <div id="logo">
-        <img class="py-2" :src="this.logo" alt="" />
-      </div>
+      <Transition appear name="v">
+        <div id="logo">
+          <img class="py-2" :src="this.logo" alt="" />
+        </div>
+      </Transition>
+
       <div class="navLinks d-flex align-items-center">
-        <ul class="d-flex gap-5 align-items-center">
-          <li v-for="link in this.links">{{ link }}</li>
-        </ul>
+        <transition-group appear
+          name="v"
+          tag="ul"
+          class="d-flex gap-5 align-items-center">
+          <li v-for="(link, index) in this.links"
+            :key="link"
+            :style="{ transitionDelay: index * 0.3 + 's' }">
+            {{ link }}
+          </li>
+        </transition-group>
         <button type="button" class="btn btn-primary ms-5">
           <strong>FREE QUOTE</strong>
         </button>
@@ -32,6 +42,15 @@ export default {
 
 <style scoped lang="scss">
 @use "../../styles/partials/variables" as *;
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
 
 nav {
   background: linear-gradient(to bottom, $light 0%, transparent 100%);
@@ -39,7 +58,7 @@ nav {
   left: 0;
   right: 0;
 }
-.container{
+.container {
   position: relative;
 }
 ul {
@@ -47,7 +66,7 @@ ul {
   padding: 0;
   list-style: none;
   font-weight: 700;
-  
+
   li:hover {
     color: $lima;
     cursor: pointer;

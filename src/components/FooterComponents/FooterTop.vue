@@ -16,33 +16,35 @@ export default {
 <template>
   <div id="wallpaper">
     <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <h5>{{ leftName }}</h5>
-          <p>
-            {{ leftDescription }}
-          </p>
-          <img :src="logo" alt="" />
+      
+        <div class="row">
+          <div class="col-4">
+            <h5>{{ leftName }}</h5>
+            <p>
+              {{ leftDescription }}
+            </p>
+            <img :src="logo" alt="" />
+          </div>
+          <div class="col-4">
+            <h5>{{ midName }}</h5>
+            <ul>
+              <li v-for="link in midLinks">{{ link }}</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h5>{{ rightName }}</h5>
+            <ul>
+              <li v-for="link in rightLinks">{{ link }}</li>
+            </ul>
+          </div>
         </div>
-        <div class="col-4">
-          <h5>{{ midName }}</h5>
-          <ul>
-            <li v-for="link in midLinks">{{ link }}</li>
-          </ul>
-        </div>
-        <div class="col-4">
-          <h5>{{ rightName }}</h5>
-          <ul>
-            <li v-for="link in rightLinks">{{ link }}</li>
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 @use "../../styles/partials/variables" as *;
+
 #wallpaper {
   background-color: $light;
 }
