@@ -69,6 +69,12 @@ export default {
   padding: 1.5rem;
   img{
     margin-bottom: 1.5rem;
+    transition: all 0.3s;
+    border-radius: 0;
+  }
+  img:hover{
+    cursor: pointer;
+    scale: 105%;
   }
   .card-body{
     padding: 2rem;
