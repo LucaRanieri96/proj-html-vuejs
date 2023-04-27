@@ -3,6 +3,7 @@ import MainHeadache from './MainHeadache.vue';
 import MainService from './MainService.vue';
 import MainQuote from './MainQuote.vue';
 import MainTestimonials from './MainTestimonials.vue';
+import MainRequest from './MainRequest.vue';
 
 export default {
   components: {
@@ -10,6 +11,7 @@ export default {
     MainService,
     MainQuote,
     MainTestimonials,
+    MainRequest,
   },
   name: "SiteMain",
 };
@@ -20,6 +22,7 @@ export default {
  <MainService></MainService>
  <MainQuote></MainQuote>
  <MainTestimonials></MainTestimonials>
+ <MainRequest></MainRequest>
 </template>
 
 <style lang="scss" scoped>

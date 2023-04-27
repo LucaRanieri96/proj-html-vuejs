@@ -61,7 +61,7 @@ export default {
 }
 
 .container {
-  padding: 8rem 0;
+  padding: 6rem 0;
   height: 100%;
   h3 {
     font-weight: 700;
