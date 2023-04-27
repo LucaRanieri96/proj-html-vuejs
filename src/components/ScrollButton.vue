@@ -1,11 +1,15 @@
 <script>
 export default {
   name: "ScrollButton",
+  methods: {
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }},
 };
 </script>
 
 <template>
-  <a id="button">
+  <a id="button" @click="scrollToTop">
     <font-awesome-icon :icon="['fas', 'chevron-up']" />
   </a>
 </template>
