@@ -15,7 +15,7 @@ export default {
             convallis ex ut sem accumsan vehicula. Integer elit arcu, hendrerit
             id sapien ut, facilisis accumsan arcu.
           </p>
-          <img src="../../public/imgs/avada-movers-logo.png" alt="" />
+          <img src="../../../public/imgs/avada-movers-logo.png" alt="" />
         </div>
         <div class="col-4">
           <h5>AVADA MOVERS</h5>

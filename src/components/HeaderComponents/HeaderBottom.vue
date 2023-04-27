@@ -1,12 +1,14 @@
 <script>
 export default {
   name: "HeaderBottom",
-  data() {
-    return {
-      logo: ``,
-      navLinks: ["Home", "Rates", "Testimonials", "FAQ", "Blogs", "Contact"],
-    };
+  props: {
+    logo: String,
+    links: Array,
   },
+  mounted() {
+  console.log(this.logo);
+  console.log(this.links);
+},
 };
 </script>
 
@@ -14,11 +16,11 @@ export default {
   <nav class="my-2">
     <div class="container d-flex justify-content-between">
       <div id="logo">
-        <img class="py-2" src="../../public/imgs/avada-movers-logo.png" alt="" />
+        <img class="py-2" :src="this.logo" alt="" />
       </div>
       <div class="navLinks d-flex align-items-center">
         <ul class="d-flex gap-5 align-items-center">
-          <li v-for="link in navLinks">{{ link }}</li>
+          <li v-for="link in this.links">{{ link }}</li>
         </ul>
         <button type="button" class="btn btn-primary ms-5">
           <strong>FREE QUOTE</strong>
