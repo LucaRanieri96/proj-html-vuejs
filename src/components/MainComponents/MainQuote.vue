@@ -1,6 +1,25 @@
 <script>
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 export default {
   name: "MainQuote",
+  mounted() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const card = this.$refs.card;
+
+    gsap.from(card, {
+      opacity: 0,
+      x: 150,
+      scrollTrigger: {
+        trigger: card,
+        start: "top 80%",
+        end: "bottom 60%",
+        toggleActions: "play none none reverse",
+      },
+    });
+  },
 };
 </script>
 
@@ -10,23 +29,21 @@ export default {
       <div class="row">
         <div class="col-6"></div>
         <div class="col-6">
-          <Transition name="slide" appear>
-            <div class="card text-center">
-              <div class="card-body">
-                <span>WE REMOVE THE HEADACHE FROM MOVING</span>
-                <h3 class="card-title">Move With Ease</h3>
-                <p class="card-text">
-                  With our super simple service we can take you from getting a
-                  quote, right through to being in your new home with all of
-                  your belongings securely packed and safely delivered, even in
-                  the rooms of your choice.
-                </p>
-                <button type="button" class="btn btn-primary">
-                  GET A FREE QUOTE NOW
-                </button>
-              </div>
+          <div class="card text-center" ref="card">
+            <div class="card-body">
+              <span>WE REMOVE THE HEADACHE FROM MOVING</span>
+              <h3 class="card-title">Move With Ease</h3>
+              <p class="card-text">
+                With our super simple service we can take you from getting a
+                quote, right through to being in your new home with all of your
+                belongings securely packed and safely delivered, even in the
+                rooms of your choice.
+              </p>
+              <button type="button" class="btn btn-primary">
+                GET A FREE QUOTE NOW
+              </button>
             </div>
-          </Transition>
+          </div>
         </div>
       </div>
     </div>
@@ -35,16 +52,6 @@ export default {
 
 <style lang="scss" scoped>
 @use "../../styles/partials/variables" as *;
-.slide-enter-active,
-.slide-leave-active {
-  transition: all 0.5s ease;
-}
-
-.slide-enter-from,
-.slide-leave-to {
-  opacity: 0;
-  transform: translateX(150%);
-}
 
 #wallpaper {
   background-image: url(../../public/imgs/avada-movers-movewithease-background-new.jpg);

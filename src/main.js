@@ -14,6 +14,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
+
 library.add(
   faPhoneFlip,
   faTwitter,

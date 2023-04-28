@@ -16,7 +16,10 @@
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "@popperjs/core": "^2.11.7",
     "bootstrap": "^5.2.3",
-    "vue": "^3.2.47"
+    "gsap": "^3.11.5",
+    "scrollreveal": "^4.0.9",
+    "vue": "^3.2.47",
+    "vue-scroll-reveal": "github:tserkov/vue-scroll-reveal#v2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
