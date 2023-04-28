@@ -1,4 +1,7 @@
 <script>
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 export default {
   name: "MainService",
   data() {
@@ -25,6 +28,22 @@ export default {
       ],
     };
   },
+  mounted() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const slide = this.$refs.slide;
+
+    gsap.from(slide, {
+      opacity: 0,
+      x: -150,
+      scrollTrigger: {
+        trigger: slide,
+        start: "top 60%",
+        end: "bottom 60%",
+        toggleActions: "play none none reverse",
+      },
+    });
+  },
 };
 </script>
 
@@ -32,27 +51,23 @@ export default {
   <div id="background">
     <div
       class="container d-flex align-items-center justify-content-center flex-column"
+      ref="slide"
     >
-    <transition name="slide" appear>
       <p id="title">WE ARE A PROFESSIONAL</p>
-    </transition>
-    <transition name="slide" appear>
       <h2 class="mb-5">Full-Service Solution</h2>
-    </transition>
+
       <div class="row">
         <div v-for="card in cards" class="col">
-          <Transition name="v" appear>
-            <div class="card text-center" :key="card.id">
-              <img class="card-img-top" :src="card.img" alt="Card image cap" />
-              <div class="card-body">
-                <h3 class="card-title">{{ card.title }}</h3>
-                <p>
-                  {{ card.paragraph }}
-                </p>
-                <button type="button" class="btn btn-primary">READ MORE</button>
-              </div>
+          <div class="card text-center">
+            <img class="card-img-top" :src="card.img" alt="Card image cap" />
+            <div class="card-body">
+              <h3 class="card-title">{{ card.title }}</h3>
+              <p>
+                {{ card.paragraph }}
+              </p>
+              <button type="button" class="btn btn-primary">READ MORE</button>
             </div>
-          </Transition>
+          </div>
         </div>
       </div>
     </div>
@@ -61,26 +76,6 @@ export default {
 
 <style lang="scss" scoped>
 @use "../../styles/partials/variables" as *;
-.slide-enter-active,
-.slide-leave-active {
-  transition: all 1.5s ease;
-}
-
-.slide-enter-from,
-.slide-leave-to {
-  opacity: 0;
-  transform: translateX(-50%);
-}
-
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 1.5s ease;
-}
-
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
-}
 
 #title {
   font-weight: 600;

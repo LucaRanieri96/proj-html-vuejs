@@ -1,12 +1,31 @@
 <script>
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 export default {
   name: "MainRequest",
+  mounted() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const container = this.$refs.container;
+
+    gsap.from(container, {
+      opacity: 0,
+      x: -150,
+      scrollTrigger: {
+        trigger: container,
+        start: "top 80%",
+        end: "bottom 60%",
+        toggleActions: "play none none reverse",
+      },
+    });
+  },
 };
 </script>
 
 <template>
   <div id="background">
-    <div class="container d-flex justify-content-center align-items-center">
+    <div class="container d-flex justify-content-center align-items-center" ref="container">
       <h2>Request A Free Quote</h2>
       <p class="mb-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac

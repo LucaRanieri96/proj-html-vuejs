@@ -1,4 +1,7 @@
 <script>
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 export default {
   name: "MainTestimonials",
   data() {
@@ -25,6 +28,44 @@ export default {
       ],
     };
   },
+  mounted() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const slide = this.$refs.slide;
+    const slide2 = this.$refs.slide2;
+    const slide3 = this.$refs.slide3;
+
+    gsap.from(slide, {
+      opacity: 0,
+      x: -150,
+      scrollTrigger: {
+        trigger: slide,
+        start: "top 90%",
+        end: "bottom 60%",
+        toggleActions: "play none none reverse",
+      },
+    });
+    gsap.from(slide2, {
+      opacity: 0,
+      x: -150,
+      scrollTrigger: {
+        trigger: slide2,
+        start: "top 80%",
+        end: "bottom 60%",
+        toggleActions: "play none none reverse",
+      },
+    });
+    gsap.from(slide3, {
+      opacity: 0,
+      x: -150,
+      scrollTrigger: {
+        trigger: slide3,
+        start: "top 70%",
+        end: "bottom 60%",
+        toggleActions: "play none none reverse",
+      },
+    });
+  },
 };
 </script>
 
@@ -33,9 +74,9 @@ export default {
     <div
       class="container d-flex align-items-center justify-content-center flex-column"
     >
-      <p id="title">HAPPY CUSTOMERS</p>
-      <h2 class="mb-5">Testimonials</h2>
-      <div class="row row-cols-3">
+      <p id="title" ref="slide">HAPPY CUSTOMERS</p>
+      <h2 class="mb-5" ref="slide2">Testimonials</h2>
+      <div class="row row-cols-3" ref="slide3">
         <div class="col text-center" v-for="witness in Testimonials">
           <img :src="witness.img" alt="" />
           <h3>{{ witness.name }}</h3>
