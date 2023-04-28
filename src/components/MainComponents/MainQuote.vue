@@ -14,7 +14,7 @@ export default {
       x: 150,
       scrollTrigger: {
         trigger: card,
-        start: "top 50%",
+        start: "top 80%",
         end: "bottom 60%",
         toggleActions: "play none none reverse",
       },
@@ -26,9 +26,9 @@ export default {
 <template>
   <div id="wallpaper">
     <div class="container">
-      <div class="row">
-        <div class="col-6"></div>
-        <div class="col-6">
+      <div class="row row-cols-1 row-cols-lg-2">
+        <div class="col"></div>
+        <div class="col">
           <div class="card text-center" ref="card">
             <div class="card-body">
               <span>WE REMOVE THE HEADACHE FROM MOVING</span>

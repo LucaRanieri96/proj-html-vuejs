@@ -56,7 +56,7 @@ export default {
       <p id="title">WE ARE A PROFESSIONAL</p>
       <h2 class="mb-5">Full-Service Solution</h2>
 
-      <div class="row">
+      <div class="row row-cols-1 row-cols-lg-3">
         <div v-for="card in cards" class="col">
           <div class="card text-center">
             <img class="card-img-top" :src="card.img" alt="Card image cap" />

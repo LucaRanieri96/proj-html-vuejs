@@ -14,7 +14,7 @@ export default {
       x: -150,
       scrollTrigger: {
         trigger: container,
-        start: "top 60%",
+        start: "top 79%",
         end: "bottom 60%",
         toggleActions: "play none none reverse",
       },
