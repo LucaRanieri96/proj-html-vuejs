@@ -23,12 +23,13 @@ export default {
 @use "../../styles/partials/variables" as *;
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 1.5s ease;
+  transition: all 1.5s ease;
 }
 
 .v-enter-from,
 .v-leave-to {
   opacity: 0;
+  transform: translateY(10%);
 }
 
 .jumbo {

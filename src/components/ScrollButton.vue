@@ -1,16 +1,34 @@
 <script>
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 export default {
   name: "ScrollButton",
   methods: {
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }},
+    mounted() {
+        gsap.registerPlugin(ScrollTrigger);
+    
+        const button = this.$refs.button;
+    
+        gsap.from(button, {
+          opacity: 0,
+          scrollTrigger: {
+            trigger: button,
+            start: "top 90%",
+            end: "bottom 60%",
+            toggleActions: "play none none reverse",
+          },
+        });
+      },
 };
 </script>
 
 <template>
-  <a id="button" @click="scrollToTop">
-    <font-awesome-icon :icon="['fas', 'chevron-up']" class="pt-2"/>
+  <a id="button" @click="scrollToTop" ref="button">
+    <font-awesome-icon :icon="['fas', 'chevron-up']" class="pt-2" />
   </a>
 </template>
 
@@ -40,5 +58,4 @@ export default {
 #button:active {
   background-color: #555;
 }
-
 </style>
