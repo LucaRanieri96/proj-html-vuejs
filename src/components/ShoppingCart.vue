@@ -15,9 +15,10 @@ export default {
 </script>
 
 <template>
-  <div id="button" @mouseenter="toggleShake" @mouseleave="toggleShake">
+  <div id="button" @mouseenter="toggleShake" @mouseleave="toggleShake" class="text-center">
     <font-awesome-icon :icon="['fas', 'cart-shopping']" v-show="shake === false"/>
     <font-awesome-icon :icon="['fas', 'cart-shopping']" shake v-show="shake === true"/>
+    <p>Buy Now</p>
   </div>
 </template>
 
@@ -28,13 +29,18 @@ export default {
   background-color: $oslogray;
   color: $light;
   box-shadow: 0 0 5px $lima;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 4px;
   position: fixed;
-  top: 200px;
-  right: 40px;
+  top: 150px;
+  right: 20px;
   transition: all 0.3s;
   z-index: 10;
+  p{
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+  }
 }
 
 #button:hover {

@@ -23,7 +23,7 @@ export default {
 @use "../../styles/partials/variables" as *;
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 3s ease;
+  transition: opacity 1.5s ease;
 }
 
 .v-enter-from,

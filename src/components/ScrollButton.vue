@@ -10,7 +10,7 @@ export default {
 
 <template>
   <a id="button" @click="scrollToTop">
-    <font-awesome-icon :icon="['fas', 'chevron-up']" />
+    <font-awesome-icon :icon="['fas', 'chevron-up']" class="pt-2"/>
   </a>
 </template>
 
@@ -20,7 +20,7 @@ export default {
 #button {
   background-color: $oslogray;
   color: $light;
-  width: 40px;
+  width: 46px;
   height: 50px;
   text-align: center;
   border-radius: 4px;

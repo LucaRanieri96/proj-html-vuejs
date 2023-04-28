@@ -22,13 +22,13 @@ export default {
       </Transition>
 
       <div class="navLinks d-flex align-items-center">
-        <transition-group appear
+        <transition-group
+          appear
           name="v"
           tag="ul"
-          class="d-flex gap-5 align-items-center">
-          <li v-for="(link, index) in this.links"
-            :key="link"
-            :style="{ transitionDelay: index * 0.3 + 's' }">
+          class="d-flex gap-5 align-items-center"
+        >
+          <li v-for="(link, index) in this.links" :key="index">
             {{ link }}
           </li>
         </transition-group>
@@ -51,7 +51,19 @@ export default {
 .v-leave-to {
   opacity: 0;
 }
+.link {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 
+.link-enter-active,
+.link-enter-to {
+  opacity: 1;
+}
+
+.link-enter-from {
+  opacity: 0;
+}
 nav {
   background: linear-gradient(to bottom, $light 0%, transparent 100%);
   position: absolute;
@@ -66,10 +78,11 @@ ul {
   padding: 0;
   list-style: none;
   font-weight: 700;
-
   li:hover {
     color: $lima;
     cursor: pointer;
+    transition-delay: 0s !important;
+    transition: ease-out 0s !important;
     transition-duration: 0.2s;
   }
 }
