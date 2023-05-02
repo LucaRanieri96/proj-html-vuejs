@@ -1,14 +1,19 @@
 <script>
+import DarkModeToggle from "../DarkModeToggle.vue";
+
 export default {
   name: "HeaderTop",
+  components: {
+    DarkModeToggle,
+  },
   props: {
     message: String,
     icons: Array,
   },
   mounted() {
-  console.log(this.message);
-  console.log(this.icons);
-},
+    console.log(this.message);
+    console.log(this.icons);
+  },
 };
 </script>
 
@@ -20,10 +25,15 @@ export default {
         <p class="ms-2">{{ this.message }}</p>
       </div>
       <div class="right d-flex gap-3 align-items-center">
-        <font-awesome-icon v-for="icon in icons.splice(1)" :icon="icon" class="icons"/>
+        <font-awesome-icon
+          v-for="icon in icons.splice(1)"
+          :icon="icon"
+          class="icons"
+        />
       </div>
     </div>
   </div>
+  <DarkModeToggle></DarkModeToggle>
 </template>
 
 <style scoped lang="scss">
@@ -32,7 +42,7 @@ export default {
 #greenHeader {
   height: 50px;
   background-color: var(--lima);
-  p{
+  p {
     margin: 0;
     font-size: 13px;
   }
@@ -41,7 +51,7 @@ export default {
 .left,
 .right {
   color: var(--light);
-  .icons:hover{
+  .icons:hover {
     cursor: pointer;
   }
 }

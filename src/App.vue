@@ -5,6 +5,7 @@ import SiteFooter from "./components/SiteFooter.vue";
 import ScrollButton from "./components/ScrollButton.vue";
 import ShoppingCart from "./components/ShoppingCart.vue";
 
+
 export default {
   components: {
     SiteHeader,
@@ -25,8 +26,6 @@ export default {
 </script>
 
 <template>
-  <button @click="changeTheme('light')">light theme</button>
-  <button @click="changeTheme('dark')">dark theme</button>
   <SiteHeader></SiteHeader>
   <SiteMain></SiteMain>
   <SiteFooter></SiteFooter>
