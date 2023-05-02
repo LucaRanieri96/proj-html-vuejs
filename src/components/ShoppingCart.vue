@@ -26,7 +26,7 @@ export default {
 @use "../styles/partials/_variables.scss" as *;
 
 #button {
-  background-color: var(--bg-oslogray);
+  background-color: var(--button-bg);
   color: var(--light);
   box-shadow: 0 0 5px var(--text-lima);
   padding: 0.5rem;

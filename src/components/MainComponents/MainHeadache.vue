@@ -58,16 +58,16 @@ export default {
   text-align: center;
   #title {
     font-weight: 600;
-    color: var(--text-black);
+    color: var(--main-title);
   }
   h2 {
     width: 500px;
-    color: var(--lima);
+    color: var(--main-h2);
   }
   p {
     font-size: 16px;
     width: 700px;
-    color: var(--text-gray);
+    color: var(--main-p);
     line-height: 30px;
     font-weight: 200;
   }

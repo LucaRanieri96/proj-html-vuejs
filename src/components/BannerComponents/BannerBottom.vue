@@ -30,6 +30,6 @@ export default {
 }
 .blueDiv:hover{
   cursor: pointer;
-  background-color: #4f9bd9;
+  background-color: #7856b7;
 }
 </style>

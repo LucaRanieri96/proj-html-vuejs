@@ -55,9 +55,7 @@ label:after {
   transition: 0.3s;  
 }
 input {
-  width: 0;
-  height: 0;
-  visibility: hidden;
+  display: none;
 }
 input:checked + label {
   background: #242424;

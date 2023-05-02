@@ -1,7 +1,6 @@
 @use "../styles/partials/_variables.scss" as *;
 
 body {
-  background-color: var(--bg-riverbed);
   font-family: "Montserrat", sans-serif;
   font-family: "Nunito Sans", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -14,13 +13,14 @@ button {
   padding: 0.6rem 1.5rem !important;
   transition-duration: 0.2s !important;
   border: 0 !important;
+  background-color: var(--button-bg) !important;
 }
 button:hover {
-  background-color: #2f8ad5 !important;
+  background-color: var(--button-hover) !important;
 }
 
 h2 {
-  color: var(--text-lima);
+  color: var(--light);
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 1rem;

@@ -5,131 +5,63 @@
   --light: #fefefe;
   --lima: #69bf14;
 
-  // HeaderBottom
-  // --lima
-  --text-black: black;
+  --bg-headerbot: white;
+  --text-headerbot: black;
 
-  // BannerTop
   --text-gray: #6e6e6e;
-  // --text-black
 
-  // BannerBottom
   --bg-denim: #1975c0;
-  // --light
 
-  // MainHeadache
+  --main-title: #212529;
+  --main-h2: #69bf14;
+  --main-p: #6e6e6e;
+
   --bg-mercury: #f1f5f8;
-  // --text-gray
-  // --lima
-  // --text-black
-  // -text-gray
 
-  // MainService
-  // --light
-  // --bg-mercury
-  // --bg-denim
-  // --lima
+  --bg-service: white;
+  --card-text: black;
+  --bg-card: white;
 
-  // MainQuote
   --bg-hippiegreen: #4c8d53;
   --bg-mantis: #8fce53;
-  // --lima
-  // --light
 
-  // MainTestimonials
-  // --lima
-  // --bg-denim
-
-  // MainRequest
-  // --lima
-  // --text-black
-
-  // FooterTop
-  // --light
-  // --lima
-  // --text-black
-
-  // FooterBottom
-  // --lima
-  // --light
-
-  // ScrollButton
+  --button-bg: #1975c0;
+  --button-hover: #2f8ad5;
+ 
   --bg-oslogray: #93989b;
-  // --light
-  // --bg-mantis
-  // --text-black
 
-  //ShoppingCart
-  // --bg-oslogray
-  // --light
-  // --lima
-  // --bg-mantis
-  // --text-black
 }
 
 [data-theme="dark"] {
-  // Headertop
   --light: #fefefe;
-  --lima: #69bf14;
+  --lima: #635985;
 
-  // HeaderBottom
-  // --lima
-  --text-black: black;
+  --bg-headerbot: white;
+  --text-headerbot: black;
 
-  // BannerTop
   --text-gray: #6e6e6e;
-  // --text-black
 
-  // BannerBottom
-  --bg-denim: #1975c0;
-  // --light
+  --bg-denim: #635985;
 
-  // MainHeadache
-  --bg-mercury: #f1f5f8;
-  // --text-gray
-  // --lima
-  // --text-black
-  // -text-gray
+  --main-title: #e5beec;
+  --main-h2: #e3a9ce;
+  --main-p: white;
 
-  // MainService
-  // --light
-  // --bg-mercury
-  // --bg-denim
-  // --lima
+  --bg-mercury: #322e46;
 
-  // MainQuote
-  --bg-hippiegreen: #4c8d53;
-  --bg-mantis: #8fce53;
-  // --lima
-  // --light
+  --bg-service: #dda1c7;
+  --card-text: #dfd9ea;
+  --bg-card: #917fb3;
+  --card-title: #4a3b66 !important;
 
-  // MainTestimonials
-  // --lima
-  // --bg-denim
+  --bg-hippiegreen: #917fb3;
+  --bg-mantis: #917fb3;
 
-  // MainRequest
-  // --lima
-  // --text-black
+  --button-bg: #4a3b66;
+  --button-hover: #7856b7;
 
-  // FooterTop
-  // --light
-  // --lima
-  // --text-black
+  --bg-foot: #917fb3;
+  --foot-black: white;
 
-  // FooterBottom
-  // --lima
-  // --light
-
-  // ScrollButton
   --bg-oslogray: #93989b;
-  // --light
-  // --bg-mantis
-  // --text-black
-
-  //ShoppingCart
-  // --bg-oslogray
-  // --light
-  // --lima
-  // --bg-mantis
-  // --text-black
 }
