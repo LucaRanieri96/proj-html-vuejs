@@ -36,8 +36,8 @@ export default {
 @use "../styles/partials/_variables.scss" as *;
 
 #button {
-  background-color: $oslogray;
-  color: $light;
+  background-color: var(--bg-oslogray);
+  color: var(--bg-light);
   width: 46px;
   height: 50px;
   text-align: center;
@@ -51,8 +51,8 @@ export default {
 
 #button:hover {
   cursor: pointer;
-  background-color: $mantis;
-  color: $darker;
+  background-color: var(--bg-mantis);
+  color: var(--text-darker);
 }
 
 #button:active {

@@ -46,7 +46,7 @@ export default {
 @use "../../styles/partials/variables" as *;
 
 #wallpaper {
-  background-color: $light;
+  background-color: var(--bg-light);
 }
 .container {
   padding: 5rem 0;
@@ -69,7 +69,7 @@ ul {
 
   li:hover {
     cursor: pointer;
-    color: $lima;
+    color: var(--text-lima);
     transition: all 0.2s;
   }
 }

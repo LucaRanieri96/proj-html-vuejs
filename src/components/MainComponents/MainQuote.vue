@@ -64,11 +64,11 @@ export default {
 .card {
   border: none;
   border-radius: 0;
-  background-color: $hippiegreen;
+  background-color: var(--bg-hippiegreen);
   padding: 1rem;
   .card-body {
     padding: 40px;
-    background-color: $lima;
+    background-color: var(--text-lima);
     color: white;
     span {
       font-weight: 700;
@@ -78,7 +78,7 @@ export default {
       padding-bottom: 1.5rem;
       font-size: 50px;
       font-weight: 700;
-      border-bottom: 1px solid $mantis;
+      border-bottom: 1px solid var(--bg-mantis);
     }
     p {
       font-size: 17px;

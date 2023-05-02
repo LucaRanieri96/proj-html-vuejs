@@ -43,7 +43,7 @@ export default {
 .container {
   height: 100%;
   p {
-    color: $darkgrey;
+    color: var(--dark-gray);
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -52,7 +52,7 @@ export default {
     font-size: 64px;
     font-weight: 700;
     line-height: 76.8px;
-    color: black;
+    color: var(--text-color);
   }
 }
 </style>

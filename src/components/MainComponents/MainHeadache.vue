@@ -48,7 +48,7 @@ export default {
 @use "../../styles/partials/variables" as *;
 
 #background {
-  background-color: $mercury;
+  background-color: var(--bg-mercury);
   padding: 4rem 0;
 }
 .container {
@@ -58,7 +58,7 @@ export default {
   text-align: center;
   #title {
     font-weight: 600;
-    color: black;
+    color: var(--text-color);
   }
   h2 {
     width: 500px;
@@ -66,7 +66,7 @@ export default {
   p {
     font-size: 16px;
     width: 700px;
-    color: $darkgrey;
+    color: var(--dark-gray);
     line-height: 30px;
     font-weight: 200;
   }

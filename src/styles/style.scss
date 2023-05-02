@@ -1,7 +1,7 @@
 @use "../styles/partials/_variables.scss" as *;
 
 body {
-  background-color: $riverbed;
+  background-color: var(--bg-riverbed);
   font-family: "Montserrat", sans-serif;
   font-family: "Nunito Sans", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -9,18 +9,18 @@ body {
 }
 
 button {
-  border-radius: 2rem !important; 
+  border-radius: 2rem !important;
   font-size: 14px !important;
-  padding: 0.6rem 1.5rem !important; 
+  padding: 0.6rem 1.5rem !important;
   transition-duration: 0.2s !important;
   border: 0 !important;
 }
-button:hover{
+button:hover {
   background-color: #2f8ad5 !important;
 }
 
 h2 {
-  color: $lima;
+  color: var(--text-lima);
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 1rem;

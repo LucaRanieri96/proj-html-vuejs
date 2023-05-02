@@ -14,22 +14,27 @@ export default {
     ShoppingCart,
   },
   data() {
-    return{}
+    return {};
   },
-  methods: {},
+  methods: {
+  changeTheme(newTheme) {
+     document.documentElement.setAttribute('data-theme', newTheme)
+  }
+}
 };
 </script>
 
 <template>
- <SiteHeader></SiteHeader>
- <SiteMain></SiteMain>
- <SiteFooter></SiteFooter>
- <ScrollButton></ScrollButton>
- <ShoppingCart></ShoppingCart>
+  <button @click="changeTheme('light')">light theme</button>
+  <button @click="changeTheme('dark')">dark theme</button>
+  <SiteHeader></SiteHeader>
+  <SiteMain></SiteMain>
+  <SiteFooter></SiteFooter>
+  <ScrollButton></ScrollButton>
+  <ShoppingCart></ShoppingCart>
 </template>
 
 <style lang="scss">
 @use "../node_modules/bootstrap/scss/bootstrap.scss";
 @use "./styles/style.scss";
-
 </style>

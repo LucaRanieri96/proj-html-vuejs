@@ -106,7 +106,7 @@ export default {
   height: 100%;
   h3 {
     font-weight: 700;
-    color: $denim;
+    color: var(--bg-denim);
     margin: 2rem 0;
   }
   p {

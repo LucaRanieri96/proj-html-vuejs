@@ -1,19 +1,37 @@
 // color palette 
 
-// Color cube
-$light: #fefefe;
-$lightgrey: #afaeae;
-$darkgrey: #6b6b6b;
-$darker: #262727;
-$lima: #69bf14;
-$denim: #1975c0;
-$sunglo: #dd7069;
-// Median cut
-$hippiegreen: #4c8d53;
-$mercury: #f1f5f8;
-$barleycorn: #9ba05a;
-$beaver: #86695a;
-$oslogray: #93989b;
-// Material design
-$riverbed: #4d596a;
-$mantis: #8fce53;
+[data-theme="dark"] {
+    --bg-light: #fefefe;
+    --text-color: black;
+    --light-gray: #afaeae;
+    --dark-gray: #6b6b6b;
+    --text-darker: #262727;
+    --text-lima: #69bf14;
+    --bg-denim: #1975c0;
+    --bg-sungloo: #dd7069;
+    --bg-hippiegreen: #4c8d53;
+    --bg-mercury: #f1f5f8;
+    --bg-barleycorn: #9ba05a;
+    --bg-beaver: #86695a;
+    --bg-oslogray: #93989b;
+    --bg-riverbed: #4d596a;
+    --bg-mantis: #8fce53;
+  }
+  [data-theme="light"] {
+    --bg-light: #fefefe;
+    --text-color: rgb(233, 233, 233);
+    --light-gray: #afaeae;
+    --dark-gray: #6b6b6b;
+    --text-darker: #262727;
+    --text-lima: #69bf14;
+    --bg-denim: #1975c0;
+    --bg-sungloo: #dd7069;
+    --bg-hippiegreen: #4c8d53;
+    --bg-mercury: #f1f5f8;
+    --bg-barleycorn: #9ba05a;
+    --bg-beaver: #86695a;
+    --bg-oslogray: #93989b;
+    --bg-riverbed: #4d596a;
+    --bg-mantis: #8fce53;
+  }
+  

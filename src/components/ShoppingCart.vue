@@ -26,9 +26,9 @@ export default {
 @use "../styles/partials/_variables.scss" as *;
 
 #button {
-  background-color: $oslogray;
-  color: $light;
-  box-shadow: 0 0 5px $lima;
+  background-color: var(--bg-oslogray);
+  color: var(--bg-light);
+  box-shadow: 0 0 5px var(--text-lima);
   padding: 0.5rem;
   border-radius: 4px;
   position: fixed;
@@ -45,8 +45,8 @@ export default {
 
 #button:hover {
   cursor: pointer;
-  background-color: $mantis;
-  color: $darker;
+  background-color: var(--bg-mantis);
+  color: var(--text-darker);
 }
 
 #button:active {

@@ -17,7 +17,7 @@ export default {
     <div class="container d-flex justify-content-between">
       <Transition appear name="v">
         <div id="logo">
-          <img class="py-2" :src="this.logo" alt="" />
+          <img class="py-2" :src="logo" alt="" />
         </div>
       </Transition>
 
@@ -28,7 +28,7 @@ export default {
           tag="ul"
           class="d-flex gap-5 align-items-center"
         >
-          <li v-for="(link, index) in this.links" :key="index">
+          <li v-for="(link, index) in links" :key="index">
             {{ link }}
           </li>
         </transition-group>
@@ -65,7 +65,7 @@ export default {
   opacity: 0;
 }
 nav {
-  background: linear-gradient(to bottom, $light 0%, transparent 100%);
+  background: linear-gradient(to bottom, white 0%, transparent 100%);
   position: absolute;
   left: 0;
   right: 0;
@@ -79,7 +79,7 @@ ul {
   list-style: none;
   font-weight: 700;
   li:hover {
-    color: $lima;
+    color: var(--text-lima);
     cursor: pointer;
     transition-delay: 0s !important;
     transition: ease-out 0s !important;

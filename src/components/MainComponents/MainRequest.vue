@@ -50,7 +50,7 @@ export default {
 }
 #green{
     height: 1rem;
-    background-color: $lima;
+    background-color: var(--text-lima);
 }
 .container {
   width: 50%;

@@ -81,13 +81,13 @@ export default {
   font-weight: 600;
 }
 #background {
-  background-color: $light;
+  background-color: var(--bg-light);
 }
 
 .card {
   border: 0;
   border-radius: 0;
-  background-color: $mercury;
+  background-color: var(--bg-mercury);
   padding: 1.5rem;
   img {
     margin-bottom: 1.5rem;
@@ -100,7 +100,7 @@ export default {
   }
   .card-body {
     padding: 2rem;
-    background-color: $light;
+    background-color: var(--bg-light);
   }
 }
 .container {
@@ -108,7 +108,7 @@ export default {
   height: 100%;
   h3 {
     font-weight: 700;
-    color: $denim;
+    color: var(--bg-denim);
   }
   p {
     font-weight: 200;
