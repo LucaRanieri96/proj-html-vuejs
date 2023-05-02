@@ -27,7 +27,7 @@ export default {
 
 #button {
   background-color: var(--bg-oslogray);
-  color: var(--bg-light);
+  color: var(--light);
   box-shadow: 0 0 5px var(--text-lima);
   padding: 0.5rem;
   border-radius: 4px;
@@ -46,7 +46,7 @@ export default {
 #button:hover {
   cursor: pointer;
   background-color: var(--bg-mantis);
-  color: var(--text-darker);
+  color: var(--text-black);
 }
 
 #button:active {

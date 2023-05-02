@@ -81,7 +81,10 @@ export default {
   font-weight: 600;
 }
 #background {
-  background-color: var(--bg-light);
+  background-color: var(--light);
+  h2{
+    color: var(--lima);
+  }
 }
 
 .card {
@@ -100,7 +103,7 @@ export default {
   }
   .card-body {
     padding: 2rem;
-    background-color: var(--bg-light);
+    background-color: var(--light);
   }
 }
 .container {

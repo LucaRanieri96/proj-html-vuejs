@@ -24,8 +24,8 @@ export default {
 @use "../../styles/partials/variables" as *;
 
 #wallpaper {
-  background-color: var(--text-lima);
-  color: var(--bg-light);
+  background-color: var(--lima);
+  color: var(--light);
 }
 .container {
   padding: 2rem 0;

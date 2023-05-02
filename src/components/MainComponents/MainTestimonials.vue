@@ -104,6 +104,9 @@ export default {
 .container {
   padding: 6rem 0;
   height: 100%;
+  h2{
+    color: var(--lima);
+  }
   h3 {
     font-weight: 700;
     color: var(--bg-denim);

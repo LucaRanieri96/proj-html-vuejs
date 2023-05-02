@@ -31,7 +31,7 @@ export default {
 
 #greenHeader {
   height: 50px;
-  background-color: var(--text-lima);
+  background-color: var(--lima);
   p{
     margin: 0;
     font-size: 13px;
@@ -40,7 +40,7 @@ export default {
 
 .left,
 .right {
-  color: var(--bg-light);
+  color: var(--light);
   .icons:hover{
     cursor: pointer;
   }

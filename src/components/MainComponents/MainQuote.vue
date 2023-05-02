@@ -68,8 +68,8 @@ export default {
   padding: 1rem;
   .card-body {
     padding: 40px;
-    background-color: var(--text-lima);
-    color: white;
+    background-color: var(--lima);
+    color: var(--light);
     span {
       font-weight: 700;
     }

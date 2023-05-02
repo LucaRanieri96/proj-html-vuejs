@@ -50,7 +50,7 @@ export default {
 }
 #green{
     height: 1rem;
-    background-color: var(--text-lima);
+    background-color: var(--lima);
 }
 .container {
   width: 50%;
@@ -58,11 +58,12 @@ export default {
   text-align: center;
   h2{
     font-size: 50px;
+    color: var(--lima);
   }
   p {
     font-size: 16px;
     width: 700px;
-    color: black;
+    color: var(--text-black);
     line-height: 30px;
     font-weight: 200;
   }

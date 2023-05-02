@@ -46,7 +46,7 @@ export default {
 @use "../../styles/partials/variables" as *;
 
 #wallpaper {
-  background-color: var(--bg-light);
+  background-color: var(--light);
 }
 .container {
   padding: 5rem 0;
@@ -54,11 +54,13 @@ export default {
 h5 {
   font-weight: 600;
   margin-bottom: 2rem;
+  color: var(--text-black);
 }
 p {
   line-height: 36px;
   font-weight: 200;
   margin-bottom: 3rem;
+  color: var(--text-black);
 }
 ul {
   list-style-type: none;
@@ -66,10 +68,11 @@ ul {
   padding: 0;
   line-height: 45px;
   font-weight: 200;
+  color: var(--text-black);
 
   li:hover {
     cursor: pointer;
-    color: var(--text-lima);
+    color: var(--lima);
     transition: all 0.2s;
   }
 }

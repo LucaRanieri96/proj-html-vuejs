@@ -78,12 +78,15 @@ ul {
   padding: 0;
   list-style: none;
   font-weight: 700;
+  li{
+    color: var(--text-black);
+  }
   li:hover {
-    color: var(--text-lima);
+    color: var(--lima);
     cursor: pointer;
     transition-delay: 0s !important;
     transition: ease-out 0s !important;
-    transition-duration: 0.2s;
+    transition-duration: 0.2s !important;
   }
 }
 </style>

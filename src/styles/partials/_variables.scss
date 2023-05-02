@@ -1,37 +1,135 @@
-// color palette 
+// color palette
+
+[data-theme="light"] {
+  // Headertop
+  --light: #fefefe;
+  --lima: #69bf14;
+
+  // HeaderBottom
+  // --lima
+  --text-black: black;
+
+  // BannerTop
+  --text-gray: #6e6e6e;
+  // --text-black
+
+  // BannerBottom
+  --bg-denim: #1975c0;
+  // --light
+
+  // MainHeadache
+  --bg-mercury: #f1f5f8;
+  // --text-gray
+  // --lima
+  // --text-black
+  // -text-gray
+
+  // MainService
+  // --light
+  // --bg-mercury
+  // --bg-denim
+  // --lima
+
+  // MainQuote
+  --bg-hippiegreen: #4c8d53;
+  --bg-mantis: #8fce53;
+  // --lima
+  // --light
+
+  // MainTestimonials
+  // --lima
+  // --bg-denim
+
+  // MainRequest
+  // --lima
+  // --text-black
+
+  // FooterTop
+  // --light
+  // --lima
+  // --text-black
+
+  // FooterBottom
+  // --lima
+  // --light
+
+  // ScrollButton
+  --bg-oslogray: #93989b;
+  // --light
+  // --bg-mantis
+  // --text-black
+
+  //ShoppingCart
+  // --bg-oslogray
+  // --light
+  // --lima
+  // --bg-mantis
+  // --text-black
+}
 
 [data-theme="dark"] {
-    --bg-light: #fefefe;
-    --text-color: black;
-    --light-gray: #afaeae;
-    --dark-gray: #6b6b6b;
-    --text-darker: #262727;
-    --text-lima: #69bf14;
-    --bg-denim: #1975c0;
-    --bg-sungloo: #dd7069;
-    --bg-hippiegreen: #4c8d53;
-    --bg-mercury: #f1f5f8;
-    --bg-barleycorn: #9ba05a;
-    --bg-beaver: #86695a;
-    --bg-oslogray: #93989b;
-    --bg-riverbed: #4d596a;
-    --bg-mantis: #8fce53;
-  }
-  [data-theme="light"] {
-    --bg-light: #fefefe;
-    --text-color: rgb(233, 233, 233);
-    --light-gray: #afaeae;
-    --dark-gray: #6b6b6b;
-    --text-darker: #262727;
-    --text-lima: #69bf14;
-    --bg-denim: #1975c0;
-    --bg-sungloo: #dd7069;
-    --bg-hippiegreen: #4c8d53;
-    --bg-mercury: #f1f5f8;
-    --bg-barleycorn: #9ba05a;
-    --bg-beaver: #86695a;
-    --bg-oslogray: #93989b;
-    --bg-riverbed: #4d596a;
-    --bg-mantis: #8fce53;
-  }
-  
+  // Headertop
+  --light: #fefefe;
+  --lima: #69bf14;
+
+  // HeaderBottom
+  // --lima
+  --text-black: black;
+
+  // BannerTop
+  --text-gray: #6e6e6e;
+  // --text-black
+
+  // BannerBottom
+  --bg-denim: #1975c0;
+  // --light
+
+  // MainHeadache
+  --bg-mercury: #f1f5f8;
+  // --text-gray
+  // --lima
+  // --text-black
+  // -text-gray
+
+  // MainService
+  // --light
+  // --bg-mercury
+  // --bg-denim
+  // --lima
+
+  // MainQuote
+  --bg-hippiegreen: #4c8d53;
+  --bg-mantis: #8fce53;
+  // --lima
+  // --light
+
+  // MainTestimonials
+  // --lima
+  // --bg-denim
+
+  // MainRequest
+  // --lima
+  // --text-black
+
+  // FooterTop
+  // --light
+  // --lima
+  // --text-black
+
+  // FooterBottom
+  // --lima
+  // --light
+
+  // ScrollButton
+  --bg-oslogray: #93989b;
+  // --light
+  // --bg-mantis
+  // --text-black
+
+  //ShoppingCart
+  // --bg-oslogray
+  // --light
+  // --lima
+  // --bg-mantis
+  // --text-black
+}

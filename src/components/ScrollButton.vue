@@ -37,7 +37,7 @@ export default {
 
 #button {
   background-color: var(--bg-oslogray);
-  color: var(--bg-light);
+  color: var(--light);
   width: 46px;
   height: 50px;
   text-align: center;
@@ -52,7 +52,7 @@ export default {
 #button:hover {
   cursor: pointer;
   background-color: var(--bg-mantis);
-  color: var(--text-darker);
+  color: var(--text-black);
 }
 
 #button:active {
